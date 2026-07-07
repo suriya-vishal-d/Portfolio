@@ -1,13 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Suriya Vishal D — Portfolio</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Fraunces:ital,opsz,wght@0,9..144,400;1,9..144,300&display=swap" rel="stylesheet">
-<style>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suriya Vishal D — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Fraunces:ital,opsz,wght@0,9..144,400;1,9..144,300&amp;display=swap" rel="stylesheet">
+  <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
   --bg:#F0F4F8;
@@ -360,192 +360,197 @@ footer{text-align:center;padding:32px;color:var(--text-3);font-size:13px;border-
   .exp-left { width: 100%; }
 }
 </style>
-</head>
-<body>
-
-<nav>
-  <div class="nav-inner">
+ </head>
+ <body>
+  <nav>
+   <div class="nav-inner">
     <ul class="nav-links">
-      <li><a class="nav-link active" data-page="home" onclick="switchPage('home')">Home</a></li>
-      <li><a class="nav-link" data-page="skills" onclick="switchPage('skills')">Skills</a></li>
-      <li><a class="nav-link" data-page="experience" onclick="switchPage('experience')">Experience</a></li>
-      <li><a class="nav-link" data-page="projects" onclick="switchPage('projects')">Projects</a></li>
-      <li><a class="nav-link" data-page="certifications" onclick="switchPage('certifications')">Certifications</a></li>
-    </ul>
-    <button class="nav-admin-btn" onclick="openAdmin()">Admin</button>
-  </div>
-</nav>
-
-<div class="container">
-  
-  <!-- HOME PAGE -->
-  <section class="page active" id="page-home">
+     <li><a class="nav-link active" data-page="home" onclick="switchPage('home')">Home</a></li>
+     <li><a class="nav-link" data-page="skills" onclick="switchPage('skills')">Skills</a></li>
+     <li><a class="nav-link" data-page="experience" onclick="switchPage('experience')">Experience</a></li>
+     <li><a class="nav-link" data-page="projects" onclick="switchPage('projects')">Projects</a></li>
+     <li><a class="nav-link" data-page="certifications" onclick="switchPage('certifications')">Certifications</a></li>
+    </ul><button class="nav-admin-btn" onclick="openAdmin()">Admin</button>
+   </div>
+  </nav>
+  <div class="container">
+   <!-- HOME PAGE -->
+   <section class="page active" id="page-home">
     <div class="card">
-      <div class="hero-grid">
-        <div class="avatar-wrap" id="avatar-wrap">
-          <div class="avatar-initials" id="avatar-initials">SV</div>
-        </div>
-        <div class="hero-info">
-          <h1 id="profile-name">Suriya Vishal D</h1>
-          <span class="hero-role" id="profile-role">B.Tech IT · Chennai</span>
-          <p class="hero-about" id="profile-about">
-            I'm an IT student and developer with a strong passion for backend development, crafting Minecraft mods, and building robust APIs. I enjoy diving into Java, exploring modern JVM ecosystems, and creating tools that integrate AI to solve real-world problems.
-          </p>
-        </div>
+     <div class="hero-grid">
+      <div class="avatar-wrap" id="avatar-wrap">
+       <div class="avatar-initials" id="avatar-initials">
+        SV
+       </div>
       </div>
+      <div class="hero-info">
+       <h1 id="profile-name">Suriya Vishal D</h1><span class="hero-role" id="profile-role">B.Tech IT · Chennai</span>
+       <p class="hero-about" id="profile-about">I'm an IT student and developer with a strong passion for backend development, crafting Minecraft mods, and building robust APIs. I enjoy diving into Java, exploring modern JVM ecosystems, and creating tools that integrate AI to solve real-world problems.</p>
+      </div>
+     </div>
     </div>
-
     <div class="home-grid">
-      <div class="card edu-card">
-        <div class="edu-label">Education</div>
-        <div class="edu-degree" id="edu-degree">B.Tech — Information Technology</div>
-        <div class="edu-school" id="edu-school">Rajalakshmi Engineering College, Chennai</div>
-        <span class="edu-cgpa" id="edu-cgpa">CGPA 8.52</span>
+     <div class="card edu-card">
+      <div class="edu-label">
+       Education
       </div>
-
-      <div class="card contact-card">
-        <div class="contact-label">Contact Details</div>
-        <div class="contact-list">
-          <a class="contact-item" id="link-email" href="mailto:suriya.vishal.d@gmail.com" title="Email Me">
-            <div class="contact-icon">
-              <svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
-            </div>
-          </a>
-          <a class="contact-item" id="link-github" href="https://github.com/suriya-vishal-d" target="_blank" title="Visit my GitHub">
-            <div class="contact-icon">
-              <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-            </div>
-          </a>
-          <a class="contact-item" id="link-discord" href="https://discord.com/users/1330162651925446766" target="_blank" title="Add me on Discord">
-            <div class="contact-icon">
-              <svg viewBox="0 0 24 24" style="fill: var(--accent);"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.010c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.010c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
-            </div>
-          </a>
-        </div>
+      <div class="edu-degree" id="edu-degree">
+       B.Tech — Information Technology
       </div>
+      <div class="edu-school" id="edu-school">
+       Rajalakshmi Engineering College, Chennai
+      </div><span class="edu-cgpa" id="edu-cgpa">CGPA 8.52</span>
+     </div>
+     <div class="card contact-card">
+      <div class="contact-label">
+       Contact Details
+      </div>
+      <div class="contact-list">
+       <a class="contact-item" id="link-email" href="mailto:suriya.vishal.d@gmail.com" title="Email Me">
+        <div class="contact-icon">
+         <svg viewBox="0 0 24 24">
+          <rect x="2" y="4" width="20" height="16" rx="2" /><polyline points="2,4 12,13 22,4" />
+         </svg>
+        </div></a> <a class="contact-item" id="link-github" href="https://github.com/suriya-vishal-d" target="_blank" title="Visit my GitHub">
+        <div class="contact-icon">
+         <svg viewBox="0 0 24 24">
+          <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+         </svg>
+        </div></a> <a class="contact-item" id="link-discord" href="https://discord.com/users/1330162651925446766" target="_blank" title="Add me on Discord">
+        <div class="contact-icon">
+         <svg viewBox="0 0 24 24" style="fill: var(--accent);">
+          <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.010c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.010c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z" />
+         </svg>
+        </div></a>
+      </div>
+     </div>
     </div>
-  </section>
-
-  <!-- SKILLS PAGE -->
-  <section class="page" id="page-skills">
+   </section><!-- SKILLS PAGE -->
+   <section class="page" id="page-skills">
     <div class="section-header">
-      <h2 class="section-title">Technical Skills</h2>
-      <p class="section-sub">Technologies and tools I work with.</p>
+     <h2 class="section-title">Technical Skills</h2>
+     <p class="section-sub">Technologies and tools I work with.</p>
     </div>
     <div class="skills-grid" id="skills-grid"></div>
-  </section>
-
-  <!-- EXPERIENCE PAGE -->
-  <section class="page" id="page-experience">
+   </section><!-- EXPERIENCE PAGE -->
+   <section class="page" id="page-experience">
     <div class="section-header">
-      <h2 class="section-title">Work Experience</h2>
-      <p class="section-sub">My professional journey so far.</p>
+     <h2 class="section-title">Work Experience</h2>
+     <p class="section-sub">My professional journey so far.</p>
     </div>
     <div class="card">
-      <div id="experience-list"></div>
+     <div id="experience-list"></div>
     </div>
-  </section>
-
-  <!-- PROJECTS PAGE -->
-  <section class="page" id="page-projects">
+   </section><!-- PROJECTS PAGE -->
+   <section class="page" id="page-projects">
     <div class="section-header">
-      <h2 class="section-title">Projects</h2>
-      <p class="section-sub">Things I've built and modded.</p>
+     <h2 class="section-title">Projects</h2>
+     <p class="section-sub">Things I've built and modded.</p>
     </div>
     <div class="projects-grid" id="projects-grid"></div>
-  </section>
-
-  <!-- CERTIFICATIONS PAGE -->
-  <section class="page" id="page-certifications">
+   </section><!-- CERTIFICATIONS PAGE -->
+   <section class="page" id="page-certifications">
     <div class="section-header">
-      <h2 class="section-title">Certifications</h2>
-      <p class="section-sub">Proof of continuous learning.</p>
+     <h2 class="section-title">Certifications</h2>
+     <p class="section-sub">Proof of continuous learning.</p>
     </div>
     <div class="certs-grid" id="certs-grid"></div>
-  </section>
-
-</div>
-
-<footer><span id="footer-text">Suriya Vishal D · suriya.vishal.d@gmail.com</span></footer>
-
-<div class="modal-overlay" id="modal-overlay" onclick="handleOverlayClick(event)">
-  <div class="modal">
-    <div class="modal-header">
-      <span class="modal-title" id="modal-title">Admin login</span>
-      <button class="modal-close" onclick="closeAdmin()">×</button>
-    </div>
-
-    <div id="auth-screen">
-      <div class="ef">
-        <label>Password</label>
-        <input type="password" id="admin-pass" placeholder="Enter admin password" onkeydown="if(event.key==='Enter')doAuth()">
-      </div>
-      <div id="auth-error">Incorrect credentials.</div>
-      <button id="auth-submit" onclick="doAuth()">Sign in</button>
-      <p style="margin-top:12px;font-size:12px;color:var(--text-3)">Secured locally via cryptographic SHA-256 validation.</p>
-    </div>
-
-    <div id="editor-screen">
-      <div class="editor-tabs">
-        <div class="editor-tab active" onclick="switchTab('general')">General</div>
-        <div class="editor-tab" onclick="switchTab('skills')">Skills</div>
-        <div class="editor-tab" onclick="switchTab('experience')">Experience</div>
-        <div class="editor-tab" onclick="switchTab('projects')">Projects</div>
-        <div class="editor-tab" onclick="switchTab('certs')">Certs</div>
-      </div>
-
-      <div class="editor-panel active" id="panel-general">
-        <div class="ef">
-          <label>Profile photo</label>
-          <div class="avatar-upload-area" onclick="document.getElementById('avatar-file-input').click()">
-            <input type="file" id="avatar-file-input" accept="image/*" onchange="handleAvatarUpload(event)">
-            <div id="avatar-preview-wrap">
-              <div class="avatar-placeholder-small" id="avatar-preview-placeholder">SV</div>
-            </div>
-            <div class="upload-hint">Click to upload photo (JPG, PNG)</div>
-          </div>
-          <button class="btn-clear-avatar" onclick="clearAvatar(event)">Remove photo</button>
-        </div>
-        <div class="ef"><label>Full name</label><input id="e-name" type="text"></div>
-        <div class="ef"><label>Tagline / role (shown under name)</label><input id="e-eyebrow" type="text"></div>
-        <div class="ef"><label>About Me (shown on Home page)</label><textarea id="e-about" rows="4"></textarea></div>
-        <div class="ef"><label>Email</label><input id="e-email" type="email"></div>
-        <div class="ef"><label>GitHub URL</label><input id="e-github" type="text"></div>
-        <div class="ef"><label>Degree</label><input id="e-degree" type="text"></div>
-        <div class="ef"><label>School</label><input id="e-school" type="text"></div>
-        <div class="ef"><label>CGPA label</label><input id="e-cgpa" type="text"></div>
-      </div>
-
-      <div class="editor-panel" id="panel-skills">
-        <div id="skills-editor-list"></div>
-        <button class="btn-add" onclick="addSkillGroup()">+ Add skill group</button>
-      </div>
-
-      <div class="editor-panel" id="panel-experience">
-        <div id="exp-editor-list"></div>
-        <button class="btn-add" onclick="addExpItem()">+ Add experience</button>
-      </div>
-
-      <div class="editor-panel" id="panel-projects">
-        <div id="proj-editor-list"></div>
-        <button class="btn-add" onclick="addProjItem()">+ Add project</button>
-      </div>
-
-      <div class="editor-panel" id="panel-certs">
-        <div id="certs-editor-list"></div>
-        <button class="btn-add" onclick="addCertItem()">+ Add certification</button>
-      </div>
-
-      <div class="editor-footer" id="editor-footer">
-        <button class="btn-save" onclick="saveData()">Save changes</button>
-        <button class="btn-cancel" onclick="closeAdmin()">Cancel</button>
-        <span id="save-status">Saved</span>
-      </div>
-    </div>
+   </section>
   </div>
-</div>
-
-<script>
+  <footer>
+   <span id="footer-text">Suriya Vishal D · suriya.vishal.d@gmail.com</span>
+  </footer>
+  <div class="modal-overlay" id="modal-overlay" onclick="handleOverlayClick(event)">
+   <div class="modal">
+    <div class="modal-header">
+     <span class="modal-title" id="modal-title">Admin login</span> <button class="modal-close" onclick="closeAdmin()">×</button>
+    </div>
+    <div id="auth-screen">
+     <div class="ef">
+      <label>Password</label> <input type="password" id="admin-pass" placeholder="Enter admin password" onkeydown="if(event.key==='Enter')doAuth()">
+     </div>
+     <div id="auth-error">
+      Incorrect credentials.
+     </div><button id="auth-submit" onclick="doAuth()">Sign in</button>
+     <p style="margin-top:12px;font-size:12px;color:var(--text-3)">Secured locally via cryptographic SHA-256 validation.</p>
+    </div>
+    <div id="editor-screen">
+     <div class="editor-tabs">
+      <div class="editor-tab active" onclick="switchTab('general')">
+       General
+      </div>
+      <div class="editor-tab" onclick="switchTab('skills')">
+       Skills
+      </div>
+      <div class="editor-tab" onclick="switchTab('experience')">
+       Experience
+      </div>
+      <div class="editor-tab" onclick="switchTab('projects')">
+       Projects
+      </div>
+      <div class="editor-tab" onclick="switchTab('certs')">
+       Certs
+      </div>
+     </div>
+     <div class="editor-panel active" id="panel-general">
+      <div class="ef">
+       <label>Profile photo</label>
+       <div class="avatar-upload-area" onclick="document.getElementById('avatar-file-input').click()">
+        <input type="file" id="avatar-file-input" accept="image/*" onchange="handleAvatarUpload(event)">
+        <div id="avatar-preview-wrap">
+         <div class="avatar-placeholder-small" id="avatar-preview-placeholder">
+          SV
+         </div>
+        </div>
+        <div class="upload-hint">
+         Click to upload photo (JPG, PNG)
+        </div>
+       </div><button class="btn-clear-avatar" onclick="clearAvatar(event)">Remove photo</button>
+      </div>
+      <div class="ef">
+       <label>Full name</label><input id="e-name" type="text">
+      </div>
+      <div class="ef">
+       <label>Tagline / role (shown under name)</label><input id="e-eyebrow" type="text">
+      </div>
+      <div class="ef">
+       <label>About Me (shown on Home page)</label><textarea id="e-about" rows="4"></textarea>
+      </div>
+      <div class="ef">
+       <label>Email</label><input id="e-email" type="email">
+      </div>
+      <div class="ef">
+       <label>GitHub URL</label><input id="e-github" type="text">
+      </div>
+      <div class="ef">
+       <label>Degree</label><input id="e-degree" type="text">
+      </div>
+      <div class="ef">
+       <label>School</label><input id="e-school" type="text">
+      </div>
+      <div class="ef">
+       <label>CGPA label</label><input id="e-cgpa" type="text">
+      </div>
+     </div>
+     <div class="editor-panel" id="panel-skills">
+      <div id="skills-editor-list"></div><button class="btn-add" onclick="addSkillGroup()">+ Add skill group</button>
+     </div>
+     <div class="editor-panel" id="panel-experience">
+      <div id="exp-editor-list"></div><button class="btn-add" onclick="addExpItem()">+ Add experience</button>
+     </div>
+     <div class="editor-panel" id="panel-projects">
+      <div id="proj-editor-list"></div><button class="btn-add" onclick="addProjItem()">+ Add project</button>
+     </div>
+     <div class="editor-panel" id="panel-certs">
+      <div id="certs-editor-list"></div><button class="btn-add" onclick="addCertItem()">+ Add certification</button>
+     </div>
+     <div class="editor-footer" id="editor-footer">
+      <button class="btn-save" onclick="saveData()">Save changes</button> <button class="btn-cancel" onclick="closeAdmin()">Cancel</button> <span id="save-status">Saved</span>
+     </div>
+    </div>
+   </div>
+  </div>
+  <script>
 // Expose functions to global scope for HTML onclick handlers
 window.openAdmin = openAdmin;
 window.closeAdmin = closeAdmin;
@@ -576,7 +581,7 @@ const PROJECT_ICONS = [
 
 const DEFAULT_DATA = {
   name:"Suriya Vishal D",eyebrow:"B.Tech IT · Chennai",
-  about:"I'm an IT student and developer with a strong passion for backend development, crafting Minecraft mods, and building robust APIs. I enjoy diving into Java, exploring modern JVM ecosystems, and creating tools that integrate AI to solve real-world problems.",
+  about:"I'm an IT student and developer with a strong passion for backend development, crafting Minecraft mods, and building robust APIs. I enjoy diving into Java, exploring modern JVM ecosystems, and creating tools that integrate AI to solve real-world problems."m an IT student and developer with a strong passion for backend development, crafting Minecraft mods, and building robust APIs. I enjoy diving into Java, exploring modern JVM ecosystems, and creating tools that integrate AI to solve real-world problems.",
   email:"suriya.vishal.d@gmail.com",github:"https://github.com/suriya-vishal-d",
   degree:"B.Tech — Information Technology",school:"Rajalakshmi Engineering College, Chennai",
   cgpa:"CGPA 8.52",
@@ -593,13 +598,13 @@ const DEFAULT_DATA = {
      bullets:["Worked on software and web development projects at a Chennai-based IT services company.","Gained hands-on experience in full-stack development workflows.","Collaborated with the development team to deliver client solutions."]}
   ],
   projects:[
-    {iconIdx:0,name:"PC Parts Picker App",desc:"Android app that fetches PC component data from Amazon and recommends builds using Hugging Face LLaMA 3 for AI-powered compatibility checks.",tags:["Android","Java","LLaMA 3","Amazon API"]},
-    {iconIdx:1,name:"SMS Messaging App",desc:"Full-featured Android messaging app using native SMS services with send, receive, threading, and Material Design UI.",tags:["Android","Java","SMS API"]},
-    {iconIdx:4,name:"Copper Golem Mod",desc:"Minecraft mod that revives the community-voted Copper Golem with custom AI behaviors using Forge and Fabric modding APIs.",tags:["Java","Minecraft Forge","Fabric"]}
+    {iconIdx:0,name:"Suriya Vishal D",desc:"Android app that fetches PC component data from Amazon and recommends builds using Hugging Face LLaMA 3 for AI-powered compatibility checks.",tags:["Android","Java","LLaMA 3","Amazon API"]},
+    {iconIdx:1,name:"Suriya Vishal D",desc:"Full-featured Android messaging app using native SMS services with send, receive, threading, and Material Design UI.",tags:["Android","Java","SMS API"]},
+    {iconIdx:4,name:"Suriya Vishal D",desc:"Minecraft mod that revives the community-voted Copper Golem with custom AI behaviors using Forge and Fabric modding APIs.",tags:["Java","Minecraft Forge","Fabric"]}
   ],
   certs:[
-    {name:"Programming in Java",issuer:"NPTEL · IIT"},
-    {name:"Internship Certificate",issuer:"IT Atmoz, Chennai"}
+    {name:"Suriya Vishal D",issuer:"NPTEL · IIT"},
+    {name:"Suriya Vishal D",issuer:"IT Atmoz, Chennai"}
   ]
 };
 
@@ -831,7 +836,7 @@ function renderProjEditor(proj){
     el.appendChild(div);
   });
 }
-function addProjItem(){const d=getData();d.projects.push({iconIdx:2,name:"New Project",desc:"Description.",tags:["Tag"]});renderProjEditor(d.projects)}
+function addProjItem(){const d=getData();d.projects.push({iconIdx:2,name:"Suriya Vishal D",desc:"Description.",tags:["Tag"]});renderProjEditor(d.projects)}
 function removeProj(i){const d=getData();d.projects.splice(i,1);renderProjEditor(d.projects)}
 
 function renderCertsEditor(certs){
@@ -844,7 +849,7 @@ function renderCertsEditor(certs){
     el.appendChild(div);
   });
 }
-function addCertItem(){const d=getData();d.certs.push({name:"New Cert",issuer:"Issuer"});renderCertsEditor(d.certs)}
+function addCertItem(){const d=getData();d.certs.push({name:"Suriya Vishal D",issuer:"Issuer"});renderCertsEditor(d.certs)}
 function removeCert(i){const d=getData();d.certs.splice(i,1);renderCertsEditor(d.certs)}
 
 function readEditorData(){
@@ -894,5 +899,5 @@ function saveData(){
 // Initial Render
 renderPortfolio();
 </script>
-</body>
+ </body>
 </html>
